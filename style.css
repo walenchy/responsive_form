@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      rgba(240, 118, 118, 0.7),
+      rgba(232, 97, 97, 0.7)   
+  ),
+  url(bg-intro-desktop.png);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 17%;
+}
+
+#above-form {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.3em;
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 5px 1px 1px hsl(0, 51%, 61%);
+}
+
+#white-bold {
+  font-weight: 800;
+}
+
+form {
+  padding: 2em 2em 0em 2em;
+  margin-top: 1.2em;
+  background-color: whitesmoke;
+  width: 32vw;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 5px 1px 1px hsl(0, 51%, 61%);
+}
+
+input {
+  position: relative;
+  margin-bottom: auto;
+  width: 100%;
+  padding: 1.2em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+img {
+  visibility: hidden;
+  position: absolute;
+  right: 21vw;
+  margin-top: .9em;
+  max-width: 1em;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.error-message {
+  display: flex;
+  width: 75%;
+  font-style: italic;
+  text-align: right;
+  margin-left: 24em;
+  margin-top: 0em;
+  padding-bottom: 1.5em;
+  padding-top: 0em;
+  font-size: .6em;
+  font-weight: 500;
+  color: red;
+}
+button {
+  width: 100%;
+  padding: 1.2em;
+  margin-bottom: 1em;
+  border-style: none;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: whitesmoke;
+  box-shadow: 0px 3px 2px 0px hsl(154, 59%, 35%);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(154, 65%, 65%);
+  box-shadow: 0px 4px 2px 0px hsl(154, 59%, 51%);
+}
+
+button:active {
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 4px 2px 0px hsl(154, 59%, 51%);
+}
+
+
+#below-form {
+  padding-bottom: 3em;
+  margin-bottom: 1em;
+  font-size: 10px;
+  font-weight: 300;
+  color:hsl(246, 25%, 77%);
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#bold-red {
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+
+.article {
+  margin-right: 2em;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+#left {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left ;
+}
+
+
+.attribution { 
+  font-size: 13px; 
+  text-align: center; 
+  font-family: 'Poppins', sans-serif;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+   font-weight: 500;
+  }
+
+@media screen and (max-width: 1184px) {
+  form {
+      width: 35vw;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  main {
+      margin: 5% 14%;
+  }
+
+  form {
+      width: 37vw;
+  }
+
+  img {
+      right: 19vw;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  form {
+      width: 40vw;
+  }
+
+  .article {
+      width: 35vw;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  main {
+      margin: 5% 10%;
+  }
+
+
+  form {
+      width: 43vw;
+  }
+
+  .article {
+      width: 37vw;
+  }
+
+  img {
+      right: 17vw;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .article {
+      margin-bottom: 1.5em;
+      width: 40vw;
+      margin-left: 3em;
+  }
+
+  form {
+      width: 45vw;
+  }
+
+  img {
+      right: 16vw;
+  }
+
+  .error-message {
+      font-size: .5em;
+      font-weight: 600;
+  }
+
+
+
+}
+
+@media screen and (max-width: 750px) {
+  main {
+      flex-direction: column;
+  }
+
+  .article {
+      width: 70vw;
+  }
+
+  .error-message {
+      font-size: .7em;
+      font-weight: 600;
+  }
+
+  form {
+      width: 70vw;
+  }
+
+
+  img {
+      right: 22vw;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .article {
+      width: 85vw;
+  }
+
+  .error-message {
+      font-size: .5em;
+      font-weight: 600;
+  }
+
+  form {
+      width: 85vw;
+  }
+
+
+  img {
+      right: 16vw;
+  }
+
+}
